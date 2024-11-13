@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <sys/msg.h>
+#include <string.h>
 
 struct msgbuf
 {
