@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 		msq_id = atoi(argv[1]);
 		
 		message.type =atoi(argv[2]);
-		strncpy(message.data, argv[3],strlen(argv[3]));
+		strcpy(message.data, argv[3]);
 		
 		msgsnd(msq_id,&message, sizeof(message.data),0);
 	}

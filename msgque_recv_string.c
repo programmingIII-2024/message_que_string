@@ -22,7 +22,7 @@ int main(void)
 	while(1)
 	{
 		msgrcv(msq_id, &message, sizeof(message.data), 0,0);
-		printf("message(id=%d) is %s\n",msq_id,message.data);
+		printf("message(id=%ld) is %s\n",message.type,message.data);
 	}
 
 	return 0;
